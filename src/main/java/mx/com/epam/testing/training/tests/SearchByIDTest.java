@@ -11,7 +11,7 @@ public class SearchByIDTest {
 	@Test
 	  public void searchByCityIDTest() {
 		
-		try{
+		try {
 		 new CurrentWeatherDanteClient().findByCityId(cityId, null);
 		}
 		catch(CurrentWeatherException e){
