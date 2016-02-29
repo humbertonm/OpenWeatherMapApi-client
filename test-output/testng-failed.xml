@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mx.com.epam.testing.training.CityIDTestFake">
+      <class name="mx.com.epam.testing.training.tests.SearchByIDTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="searchByID"/>
+          <include name="initTests"/>
+          <include name="searchByCityIdNotNullTest"/>
         </methods>
-      </class> <!-- mx.com.epam.testing.training.CityIDTestFake -->
+      </class> <!-- mx.com.epam.testing.training.tests.SearchByIDTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

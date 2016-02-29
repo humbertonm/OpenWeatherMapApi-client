@@ -11,17 +11,23 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "temp",
 "pressure",
 "humidity",
-"temp_min",
-"temp_max"
+"tempMin",
+"tempMax"
 })
 public class Main {
+
+@Override
+	public String toString() {
+		return "Main [temp=" + temp + ", pressure=" + pressure + ", humidity=" + humidity + ", tempMin=" + tempMin
+				+ ", tempMax=" + tempMax + "]";
+	}
 
 @JsonProperty("temp")
 private Double temp;
 @JsonProperty("pressure")
-private Integer pressure;
+private Double pressure;
 @JsonProperty("humidity")
-private Integer humidity;
+private Double humidity;
 @JsonProperty("temp_min")
 private Double tempMin;
 @JsonProperty("temp_max")
@@ -53,7 +59,7 @@ this.temp = temp;
 * The pressure
 */
 @JsonProperty("pressure")
-public Integer getPressure() {
+public Double getPressure() {
 return pressure;
 }
 
@@ -63,7 +69,7 @@ return pressure;
 * The pressure
 */
 @JsonProperty("pressure")
-public void setPressure(Integer pressure) {
+public void setPressure(Double pressure) {
 this.pressure = pressure;
 }
 
@@ -73,7 +79,7 @@ this.pressure = pressure;
 * The humidity
 */
 @JsonProperty("humidity")
-public Integer getHumidity() {
+public Double getHumidity() {
 return humidity;
 }
 
@@ -83,7 +89,7 @@ return humidity;
 * The humidity
 */
 @JsonProperty("humidity")
-public void setHumidity(Integer humidity) {
+public void setHumidity(Double humidity) {
 this.humidity = humidity;
 }
 
@@ -92,7 +98,7 @@ this.humidity = humidity;
 * @return
 * The tempMin
 */
-@JsonProperty("temp_min")
+@JsonProperty("tempMin")
 public Double getTempMin() {
 return tempMin;
 }
@@ -102,7 +108,7 @@ return tempMin;
 * @param tempMin
 * The temp_min
 */
-@JsonProperty("temp_min")
+@JsonProperty("tempMin")
 public void setTempMin(Double tempMin) {
 this.tempMin = tempMin;
 }
@@ -112,7 +118,7 @@ this.tempMin = tempMin;
 * @return
 * The tempMax
 */
-@JsonProperty("temp_max")
+@JsonProperty("tempMax")
 public Double getTempMax() {
 return tempMax;
 }
@@ -122,7 +128,7 @@ return tempMax;
 * @param tempMax
 * The temp_max
 */
-@JsonProperty("temp_max")
+@JsonProperty("tempMax")
 public void setTempMax(Double tempMax) {
 this.tempMax = tempMax;
 }

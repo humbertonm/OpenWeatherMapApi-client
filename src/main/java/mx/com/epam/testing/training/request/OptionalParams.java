@@ -8,26 +8,32 @@ package mx.com.epam.testing.training.request;
  *
  */
 public class OptionalParams {
-	private String mode;
-	private String language;
-	private String tempUnit;
+	private Mode mode;
+	private Language language;
+	private TempUnit tempUnit;
 	
-	public String getMode() {
+	public OptionalParams(Mode mode, TempUnit tempUnit, Language language){
+		this.mode=mode;
+		this.language= language;
+		this.tempUnit=tempUnit;
+	}
+	
+	public Mode getMode() {
 		return mode;
 	}
-	public void setMode(String mode) {
+	public void setMode(Mode mode) {
 		this.mode = mode;
 	}
-	public String getLanguage() {
+	public Language getLanguage() {
 		return language;
 	}
-	public void setLanguage(String language) {
+	public void setLanguage(Language language) {
 		this.language = language;
 	}
-	public String getTempUnit() {
+	public TempUnit getTempUnit() {
 		return tempUnit;
 	}
-	public void setTempUnit(String tempUnit) {
+	public void setTempUnit(TempUnit tempUnit) {
 		this.tempUnit = tempUnit;
 	}
 }
