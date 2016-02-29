@@ -18,6 +18,10 @@ public class OptionalParams {
 		this.tempUnit=tempUnit;
 	}
 	
+	public OptionalParams(){
+		
+	}
+	
 	public Mode getMode() {
 		return mode;
 	}

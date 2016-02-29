@@ -16,7 +16,7 @@ public class SearchByIDTest {
 	private int cityId = 2172797;
 	private Mode mode = Mode.JSON;
 	private TempUnit tempUnit = TempUnit.METRIC;
-	private Language language = Language.EN_US;
+	private Language language = Language.ENGLISH;
 	private OptionalParams optionalParameters;
 	private CurrentWeatherResponse response = new CurrentWeatherResponse();
 

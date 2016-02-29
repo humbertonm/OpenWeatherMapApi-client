@@ -81,7 +81,7 @@ public class CurrentWeatherDanteClient implements CurrentWeather {
 		if (optionalParams.getMode() != null || optionalParams.getMode() != Mode.JSON) {
 			urlBuild.append("&mode=" + optionalParams.getMode());
 		}
-		if (optionalParams.getLanguage() != null || optionalParams.getLanguage() != Language.EN_US) {
+		if (optionalParams.getLanguage() != null || optionalParams.getLanguage() != Language.ENGLISH) {
 			urlBuild.append("&language=" + optionalParams.getLanguage());
 		}
 		if (optionalParams.getTempUnit() != null || optionalParams.getTempUnit() != TempUnit.STANDARD) {
