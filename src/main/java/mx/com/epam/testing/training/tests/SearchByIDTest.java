@@ -42,10 +42,4 @@ public class SearchByIDTest {
 
 	}
 	
-	// Checks if response temperature is in Kelvin degrees
-	@Test (enabled = false)
-	public void searchByCityIdCheckTempKelvin() throws CurrentWeatherException {		
-		response = new CurrentWeatherDanteClient().findByCityId(cityId, optionalParameters);
-		
-	}
 }
