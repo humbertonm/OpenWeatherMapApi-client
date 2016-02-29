@@ -12,7 +12,9 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "pressure",
 "humidity",
 "temp_min",
-"temp_max"
+"temp_max",
+"sea_level",
+"grnd_level"
 })
 public class Main {
 
@@ -26,6 +28,10 @@ private Integer humidity;
 private Double tempMin;
 @JsonProperty("temp_max")
 private Double tempMax;
+@JsonProperty("sea_level")
+private Double seaLevel;
+@JsonProperty("grnd_level")
+private Double grndLevel;
 
 /**
 *
@@ -126,5 +132,30 @@ return tempMax;
 public void setTempMax(Double tempMax) {
 this.tempMax = tempMax;
 }
+
+public Double getSeaLevel() {
+	return seaLevel;
+}
+
+public void setSeaLevel(Double seaLevel) {
+	this.seaLevel = seaLevel;
+}
+
+public Double getGrndLevel() {
+	return grndLevel;
+}
+
+public void setGrndLevel(Double grndLevel) {
+	this.grndLevel = grndLevel;
+}
+
+@Override
+public String toString() {
+	return "Main [temp=" + temp + ", pressure=" + pressure + ", humidity=" + humidity + ", tempMin=" + tempMin
+			+ ", tempMax=" + tempMax + ", seaLevel=" + seaLevel + ", grndLevel=" + grndLevel + "]";
+}
+
+
+
 
 }

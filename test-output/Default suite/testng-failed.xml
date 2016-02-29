@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mx.com.epam.testing.training.CityIDTestFake">
+      <class name="mx.com.epam.testing.training.client.CurrentWeatherLuisClientTest">
         <methods>
-          <include name="beforeClass"/>
-          <include name="searchByID"/>
+          <include name="verifyAvailabelTempUnit" invocation-numbers="0"/>
         </methods>
-      </class> <!-- mx.com.epam.testing.training.CityIDTestFake -->
+      </class> <!-- mx.com.epam.testing.training.client.CurrentWeatherLuisClientTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,6 +17,12 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class Sys {
 
+@Override
+	public String toString() {
+		return "Sys [type=" + type + ", id=" + id + ", message=" + message + ", country=" + country + ", sunrise="
+				+ sunrise + ", sunset=" + sunset + "]";
+	}
+
 @JsonProperty("type")
 private Integer type;
 @JsonProperty("id")

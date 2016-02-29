@@ -13,6 +13,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class Wind {
 
+@Override
+	public String toString() {
+		return "Wind [speed=" + speed + ", deg=" + deg + "]";
+	}
+
 @JsonProperty("speed")
 private Double speed;
 @JsonProperty("deg")

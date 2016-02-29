@@ -13,6 +13,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class Clouds {
 
+@Override
+	public String toString() {
+		return "Clouds [all=" + all + "]";
+	}
+
 @JsonProperty("all")
 private Integer all;
 
