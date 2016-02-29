@@ -2,9 +2,6 @@ package mx.com.epam.testing.training.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.google.gson.JsonObject;
-
 import mx.com.epam.testing.training.client.CurrentWeatherDanteClient;
 import mx.com.epam.testing.training.exception.CurrentWeatherException;
 import mx.com.epam.testing.training.model.CurrentWeatherResponse;
@@ -21,35 +18,28 @@ public class SearchByIDTest {
 	private TempUnit tempUnit = TempUnit.METRIC;
 	private Language language = Language.EN_US;
 	private OptionalParams optionalParameters;
+	private CurrentWeatherResponse response = new CurrentWeatherResponse();
 
 	@BeforeClass
 	public void initTests() {
 		optionalParameters = new OptionalParams(mode, tempUnit, language);
 	}
 
-	// REST service responenot null
-	@Test
+	// REST service response not null
+	@Test (enabled = true)
 	public void searchByCityIdNotNullTest() throws CurrentWeatherException {
-		CurrentWeatherResponse response;
 		response = new CurrentWeatherDanteClient().findByCityId(cityId, optionalParameters);
 		Assert.assertNotNull(response);
-		System.out.println("MAXoutside: " + response.getMain().getTempMax());
 	}
 
-	// Checks if response is in JSON format
+	// response is in JSON format
 	@Test (enabled = false)
 	public void searchByCityIdCheckModeJson() throws CurrentWeatherException {
-		CurrentWeatherResponse response;
-		response = new CurrentWeatherDanteClient().findByCityId(cityId, optionalParameters);
-		Assert.assertNotNull(response);
+		CurrentWeatherDanteClient danteCient = new CurrentWeatherDanteClient();
+		response = danteCient.findByCityId(cityId, optionalParameters);
+		String output = danteCient.getOutputString();
+		Assert.assertTrue(CurrentWeatherDanteClient.checkJsonFormat(output, optionalParameters));
 
 	}
 	
-	// Checks if response temeprature is in Kelvin degrees
-	@Test (enabled = false)
-	public void searchByCityIdCheckTempKelvin() throws CurrentWeatherException {
-		CurrentWeatherResponse response;
-		response = new CurrentWeatherDanteClient().findByCityId(cityId, optionalParameters);
-		Assert.assertTrue(true);
-	}
 }
