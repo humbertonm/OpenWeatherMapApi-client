@@ -21,9 +21,9 @@ public class Main {
 @JsonProperty("temp")
 private Double temp;
 @JsonProperty("pressure")
-private Integer pressure;
+private Double pressure;
 @JsonProperty("humidity")
-private Integer humidity;
+private Double humidity;
 @JsonProperty("temp_min")
 private Double tempMin;
 @JsonProperty("temp_max")
@@ -59,7 +59,7 @@ this.temp = temp;
 * The pressure
 */
 @JsonProperty("pressure")
-public Integer getPressure() {
+public Double getPressure() {
 return pressure;
 }
 
@@ -69,7 +69,7 @@ return pressure;
 * The pressure
 */
 @JsonProperty("pressure")
-public void setPressure(Integer pressure) {
+public void setPressure(Double pressure) {
 this.pressure = pressure;
 }
 
@@ -79,7 +79,7 @@ this.pressure = pressure;
 * The humidity
 */
 @JsonProperty("humidity")
-public Integer getHumidity() {
+public Double getHumidity() {
 return humidity;
 }
 
@@ -89,7 +89,7 @@ return humidity;
 * The humidity
 */
 @JsonProperty("humidity")
-public void setHumidity(Integer humidity) {
+public void setHumidity(Double humidity) {
 this.humidity = humidity;
 }
 
