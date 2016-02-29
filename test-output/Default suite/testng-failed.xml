@@ -6,7 +6,7 @@
       <class name="mx.com.epam.testing.training.tests.SearchByIDTest">
         <methods>
           <include name="initTests"/>
-          <include name="searchByCityIdNotNullTest"/>
+          <include name="searchByCityIdCheckModeJson"/>
         </methods>
       </class> <!-- mx.com.epam.testing.training.tests.SearchByIDTest -->
     </classes>

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="354" started-at="2016-02-29T18:21:59Z" finished-at="2016-02-29T18:21:59Z">
+  <suite name="Default suite" duration-ms="357" started-at="2016-02-29T22:51:49Z" finished-at="2016-02-29T22:51:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="354" started-at="2016-02-29T18:21:59Z" finished-at="2016-02-29T18:21:59Z">
+    <test name="Default test" duration-ms="357" started-at="2016-02-29T22:51:49Z" finished-at="2016-02-29T22:51:50Z">
       <class name="mx.com.epam.testing.training.tests.SearchByIDTest">
-        <test-method status="PASS" signature="initTests()[pri:0, instance:mx.com.epam.testing.training.tests.SearchByIDTest@34340fab]" name="initTests" is-config="true" duration-ms="11" started-at="2016-02-29T12:21:59Z" finished-at="2016-02-29T12:21:59Z">
+        <test-method status="PASS" signature="initTests()[pri:0, instance:mx.com.epam.testing.training.tests.SearchByIDTest@34340fab]" name="initTests" is-config="true" duration-ms="10" started-at="2016-02-29T16:51:49Z" finished-at="2016-02-29T16:51:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTests -->
-        <test-method status="PASS" signature="searchByCityIdNotNullTest()[pri:0, instance:mx.com.epam.testing.training.tests.SearchByIDTest@34340fab]" name="searchByCityIdNotNullTest" duration-ms="328" started-at="2016-02-29T12:21:59Z" finished-at="2016-02-29T12:21:59Z">
+        <test-method status="PASS" signature="searchByCityIdNotNullTest()[pri:0, instance:mx.com.epam.testing.training.tests.SearchByIDTest@34340fab]" name="searchByCityIdNotNullTest" duration-ms="335" started-at="2016-02-29T16:51:49Z" finished-at="2016-02-29T16:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByCityIdNotNullTest -->
